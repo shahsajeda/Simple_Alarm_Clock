@@ -1,0 +1,27 @@
+<!-- res/drawable/button_hover_effect.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#8692f7" /> <!-- Color when pressed (your app color) -->
+            <corners android:radius="16dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+
+    <!-- Hovered state (for API 21+) -->
+    <item android:state_hovered="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#b4a7d6" /> <!-- Color when hovered (lighter lavender) -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" /> <!-- Default background color -->
+            <corners android:radius="16dp" />
+            <stroke android:width="2dp" android:color="@color/lavander11" /> <!-- Border color -->
+        </shape>
+    </item>
+</selector>
